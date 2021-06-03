@@ -1,0 +1,1 @@
+# crtx_vision_module-config
