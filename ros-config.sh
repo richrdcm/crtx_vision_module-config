@@ -1,0 +1,7 @@
+### ROS Setup
+#IP=192.168.43.199       # ETHERNET
+IP=192.168.43.130       # WIFI
+
+export ROS_HOSTNAME=$IP
+export ROS_MASTER_URI=http://$IP:11311
+

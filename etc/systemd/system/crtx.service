@@ -1,0 +1,13 @@
+[Unit]
+Description=crtx service
+Wants=network-online.target
+After=network-online.target
+
+[Service]
+Type=simple
+User=crtx
+ExecStart=/home/crtx/autostart.sh
+
+[Install]
+WantedBy=multi-user.target
+
