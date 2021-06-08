@@ -1,4 +1,4 @@
-#!/bin/zsh
+#!/usr/bin/env bash
 
 # load environment settings from .bashrc
 source /home/crtx/.bashrc
@@ -14,5 +14,6 @@ sudo modprobe uvcvideo
 rm -rf /home/ros/.ros/log
 
 ### Start ROS launch scripts
-USE_NODELETS=true roslaunch data_base_recorder recorder.launch
+echo "launching ROS"
+USE_NODELETS=false roslaunch data_base_recorder recorder.launch
 

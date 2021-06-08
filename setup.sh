@@ -23,13 +23,14 @@ sudo apt install -y clang
 source /opt/ros/melodic/setup.bashrc
 catkin config --cmake-args -DCMAKE_C_COMPILER=/usr/bin/clang -DCMAKE_CXX_COMPILER=/usr/bin/clang++
 catkin build
-cd
+
 
 git git clone http://richrdcm/crtx_vision_module-config
 cd crtx_vision_module-config
 sudo chown -R root:root etc
 sudo cp -r etc/* /etc
 sudo rm /etc/netplan/01-network-manager-all.yaml
+sudo ip link set eno1 up
 
 # adjust wireless interfaces
 sudo nano /etc/netplan/02-wireless.yaml
