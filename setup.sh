@@ -42,6 +42,6 @@ cp .zshrc ..
 sudo chmod +x ../autostart.sh
 sudo systemctl enable crtx.service
 
-sudo bash -c 'echo "ros ALL=(ALL) NOPASSWD: /sbin/poweroff, /sbin/reboot, /sbin/shutdown" >> /etc/sudoers'
+sudo bash -c 'echo "crtx ALL=(ALL) NOPASSWD: /sbin/poweroff, /sbin/reboot, /sbin/shutdown" >> /etc/sudoers'
 
 

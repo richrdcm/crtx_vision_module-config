@@ -1,11 +1,13 @@
 [Unit]
 Description=crtx service
-Wants=network-online.target
-After=network-online.target
+Wants=dev-video0.device
+After=dev-video0.device
 
 [Service]
 Type=simple
 User=crtx
+Environment=DISPLAY=:0
+Environment=XAUTHORITY=/home/crtx/.Xauthority
 ExecStart=/home/crtx/autostart.sh
 
 [Install]
