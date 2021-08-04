@@ -13,6 +13,7 @@ rosdep update
 
 sudo apt install -y zsh git build-essential
 sudo apt install -y python-rosinstall python-rosinstall-generator python-wstool build-essential python-catkin-tools
+sudo apt-get install ros-melodic-dynamic-reconfigure
 
 # setup recorder
 cd /opt/
